@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- This is my comment -->
+<!-- Caden Holmquist --> 
+
+<meta charset="UTF-8">
+<meta name="description" content="CWeb 1010 at Dunwoody">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="TT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document Title</title>
+
+</head>
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  background-color: black;
+  padding: 15px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  background-color: lightgreen;
+}
+
+h1 {
+  text-shadow: 2px 2px #FF0000;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+      background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  }
+
+.item1 {
+  grid-column-start: 0;
+  grid-column-end: span 0;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The grid-template-columns Property</h1>
+
+<p>You can use the <em>grid-template-columns</em> property to specify the number of columns in your grid layout.</p>
+
+<div class="grid-container">
+<div class="item1">1</div>
+  <div>2</div>
+  <div>3</div>  
+<div class="item4">4</div>
+<div class="item5">5</div>
+  <div>6</div>  
+  <div>7</div>
+<div class="item8">8</div>
+</div>
+
+</body>
+</html>
