@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- This is my comment -->
+<!-- Caden Holmquist --> 
+
+<meta charset="UTF-8">
+<meta name="description" content="CWeb 1010 at Dunwoody">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="TT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document Title</title>
+
+</head>
+
+<style>
+.grid-container {
+  display: grid;
+  height: 400px;
+  align-content: center;
+  grid-template-columns: 100px auto auto;
+  gap: 10px;
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+  padding: 50px;
+  
+}
+
+.grid-container > div {
+  background-color: red;
+  border: solid 8px #FF1493;
+  outline: solid 8px black;
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: orange;
+  }
+
+</style>
+</head>
+<body>
+
+<h1>The align-content Property</h1>
+
+<p>Use the <em>align-content</em> property to vertically align the grid inside the container.</p>
+
+<p>The value "center" will align the rows in the middle of the container:</p>
+
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div> 
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+</div>
+
+</body>
+</html>
+
+<style>
