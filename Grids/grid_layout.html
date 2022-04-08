@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- This is my comment -->
+<!-- Caden Holmquist --> 
+
+<meta charset="UTF-8">
+<meta name="description" content="CWeb 1010 at Dunwoody">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="TT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document Title</title>
+
+</head>
+
+<style>
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: Red;
+  padding: 20px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1, .item2, .item3, .item4, .item5 {
+	font-size: 60px;
+}
+
+.item2 {
+background-image: url(images/logoo.jpg); 
+border: 8px solid rgba(0, 0, 0, 0.8);
+background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: lightpink;
+  }
+  
+  
+</style>
+
+</head>
+
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">CH Bait & Tackle</div>
+  <div class="item2">Logo</div>
+  <div class="item3">Fishing</div>  
+  <div class="item4">Photos</div>
+  <div class="item5">Navigation</div>
+</div>
+
+</body>
+
+</html>
