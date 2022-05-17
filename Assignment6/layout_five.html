@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Caden Holmquist -->
+	<!-- 05/15/2022 -->
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment 5">
+    <meta name="keywords" content="Fishing, Assignment 5, Lures">
+    <meta name="author" content="Caden Holmquist">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Photo Gallery</title>
+
+<link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+<style>
+
+body {
+  background-color:rgb(255, 255, 204);
+  font-family: courier, serif;
+  font-weight: 800;
+}
+
+.container {
+	background-color: rgb(255, 255, 204);
+	color: blue;
+	width: 100%;
+	float: left;
+}
+
+.header {
+	background-color: rgb(0, 89, 179);
+	color: rgb(255, 255, 204);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	padding: 10px;
+	width: auto;
+	text-align: center;
+}
+
+.header2 {
+	background-color: rgb(0, 89, 179);
+	color: rgb(255, 255, 204);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 60px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 50px;
+	width: auto;
+	text-align: center;
+	border-style: double;
+    border-color: red;
+	border-width: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: rgb(0, 89, 179);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+
+a:link, a:visited {
+background-color: rgb(255, 255, 204);
+color: black;
+padding: 15px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+
+a:hover, a:active {
+background-color: red;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+	grid-template-columns: auto auto;
+    background-color: Red;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  body {
+	grid-template-columns: auto;
+	background-color: Blue;
+	}
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+                <nav>
+                    <a href="/html1/Assignment5/layout_one.html"> Home </a> 
+                    <a href="/html1/Assignment5/layout_two.html"> About </a> 
+                    <a href="/html1/Assignment5/layout_three.html"> Products </a> 
+                    <a href="mailto:holcadj@dunwoody.edu"> Contact </a> 
+                    <a href="/html1/Assignment5/layout_four.html"> Learn About Fishing </a> 
+                    <a href="/html1/Assignment5/layout_five.html"> Photo Gallery </a> 
+                </nav>
+
+</div>
+
+<div class="header2">Photo Gallery</div>
+
+<div class="grid-container">
+				<div><img src="images/sun.jpg" alt="boat" width="100%" height="100%"></div>
+                <div><img src="images/sand.jpg" alt="boat" width="100%" height="100%"></div>
+                <div><img src="images/motor.jpg" alt="boat" width="100%" height="100%"></div>
+                <div><img src="images/trolling.jpg" alt="boat" width="100%" height="100%"></div>
+				<div><img src="images/mitch.jpg" alt="boat" width="100%" height="100%"></div>
+                <div><img src="images/small.jpg" alt="boat" width="100%" height="100%"></div>
+                <div><img src="images/walleye.jpg" alt="boat" width="100%" height="100%"></div>
+                <div><img src="images/sunny.jpg" alt="boat" width="100%" height="100%"></div>
+                <div><img src="images/Boat.jpg" alt="boat" width="100%" height="100%"></div>
+                <div><img src="images/truck.jpg" alt="boat" width="100%" height="100%"></div>
+                <div><img src="images/morning.jpg" alt="boat" width="100%" height="100%"></div>
+				<div><img src="images/motorr.jpg" alt="boat" width="100%" height="100%"></div>
+</div>
+
+<div class="header">
+
+                <nav>
+                    <a href="/html1/Assignment5/layout_one.html"> Home </a> 
+                    <a href="/html1/Assignment5/layout_two.html"> About </a> 
+                    <a href="/html1/Assignment5/layout_three.html"> Products </a> 
+                    <a href="mailto:holcadj@dunwoody.edu"> Contact </a> 
+                    <a href="/html1/Assignment5/layout_four.html"> Learn About Fishing </a> 
+                    <a href="/html1/Assignment5/layout_five.html"> Photo Gallery </a> 
+                </nav>
+</div>
+
+<footer>
+
+  <p>Author: Caden Holmquist</p>
+  <p>Published: 05/15/2022 </p>
+                <script>
+					// Function for changing the background color
+					function myColorFunction() {
+					document.body.style.backgroundColor = "Red"; }
+				</script>
+				<button type="button" onclick="myColorFunction()">CLICK TO CHANGE BACKGROUND TO RED</button>
+  
+</footer>
+
+</body>
+</html>
